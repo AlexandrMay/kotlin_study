@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         addFoodButton.setOnClickListener {
             val newFood = addFoodText.text.toString()
             if (newFood.equals("") || newFood.length > 10){
-                val text = "Enter any name from 1 to 10 symbols!"
+                val text = "Enter any food name from 1 to 10 symbols!"
                 val duration = Toast.LENGTH_SHORT
                 val toast = Toast.makeText(applicationContext, text, duration)
                 toast.show()
